@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+
+{% block title %} 
+ABOUT 
+{% endblock %}
+
+{% block content %} 
+{% load static %}
+<h1 class="text-center">ABOUT US</h1>
+<section class="trust-quality my-5">
+    <div class="container">
+        <div class="row d-flex align-items-center">
+            <div class="col-md-6">
+                <img src="{% static '/images/hosp_img.jpg'%}" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-6">
+                <h3 class="text-primary">Care with Cure</h3>
+                <p>City Hospital “A home for the sick people who are treated towards life” The hospital
+                    is focused on delivering diligent care to the poorer sections of the society. 
+                </p>
+                <p>Years before, our institution started as a small health centre with 20 beds this slowly grew up to
+                    the present. Currently, it is a 100 bedded hospital with Operation theatre, ICU, Laboratory, X-Ray,
+                    24 hours Casualty, Scanning centre and many more.
+                    The institution has been working as the cradle for the needy. We are focused to deliver standardized nursing care, nursing education, palliative care and
+                    health educations to the residents of this area.
+                </p>
+                <!-- <a href="#" class="btn btn-primary">Enquire Now</a> -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="trust-quality">
+    <div class="container">
+        <div class="row d-flex align-items-center">
+
+            <div class="col-md-6">
+                <h3 class="text-primary">Director’s Message</h3>
+                <p>City Hospital has been committed to excellence of care for sick people irrespective of
+                    caste, creed or religion since its existence in 1982. Today health care has grown beyond our
+                    imagination. The trends and technologies in health care are transforming medical services at a rapid
+                    pace. The challenge is to continue providing quality health care at an affordable cost despite the
+                    ever increasing cost of equipments and medical staff.
+                    
+                    <br>A team of talented, caring doctors, competent, compassionate nurses, skillful technical and
+                    support staff are working together with a holistic approach to provide the best possible medical and
+                    nursing care. Our Surgeons are talented and committed, supported by a highly qualified Anesthesia
+                    Team. I am sure with well equipped operation theaters, laboratories, imaging facilities, Pharmacy
+                    and Critical care Units, City Hospital will provide every patient the very best of
+                    medical care.
+
+                </p>
+                <p> <strong>With best regards,</strong> </p>
+                <h5>Mr.Francis M.O.</h5>
+                <h6>Director</h6>
+
+            </div>
+            <div class="col-md-6">
+                <img src="{% static '/images/director_img.jpg' %}" class="img-fluid" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="mission-vision my-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="content vision">
+                    <h2 class="text-primary ">Our Vision</h2>
+                    <p>“Holistic care to the patient
+                        With a healing hand”
+                    </p>
+                </div>
+
+            </div>
+            <div class="col-md-6">
+                <div class="content mission">
+                    <h2 class="text-primary">Our Mission</h2>
+                    <p>“Provide quality of care to the patient with innovation to make it more convenient and
+                        co-ordinated."
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+{% endblock %}

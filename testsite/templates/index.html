@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+
+{% block title %} 
+HOME 
+{% endblock %}
+
+{% block content %} 
+{% load static %}
+
+
+<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="{% static '/images/car1.jpg'%}" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="{% static '/images/car2.jpg'%}" class="d-block w-100" alt="...">
+        
+      </div>
+      <div class="carousel-item">
+        <img src="{% static '/images/car3.jpg'%}" class="d-block w-100" alt="...">
+        
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <section class="home">
+    <div class="container h-100">
+        <div class="row h-100">
+            <div class="col-md-6">
+                <div class="wrapper">
+                    <h2 class="text-primary ">Care with Cure</h2>
+                    <p>City Hospital “A home for the sick people who are treated towards life” The hospital
+                      is focused on delivering diligent care to the poorer sections of the society. Years before, our institution started as a small health centre with 20 beds this slowly grew up to
+                    the present. Currently, it is a 100 bedded hospital with Operation theatre, ICU, Laboratory, X-Ray,
+                    24 hours Casualty, Scanning centre and many more.
+                    The institution has been working as the cradle for the needy. We are focused to deliver standardized nursing care, nursing education, palliative care and
+                    health educations to the residents of this area.
+                    </p>
+                    <a href="{% url 'about' %}" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="quick-boxes">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="info-box">
+                    <img src="assets/home/first-aid-kit.svg" class="img-fluid" alt="">
+                    <h5 class="text-primary">Treasure the Love 
+                    Healing Touch</h5>
+                    <p>The Hospital indicates the Care & Cure mission of Jesus facilitating the Health Care ministries to the suffering segment of the society, irrespective of cast, creed, race or religion. </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="info-box">
+                    <img src="assets/home/doctor.svg" class="img-fluid" alt="">
+                    <h5 class="text-primary">High Tech 
+                    High Touch</h5>
+                    <p>Patients want high-tech doctors and facilities. But they also want more face-to-face time, more personal connections; let's call it "high-touch" care.</p>
+                </div>
+            </div>
+            <div class="col-md-4" >
+                <div class="info-box">
+                    <img src="assets/home/question.svg" class="img-fluid" alt="">
+                    <h5 class="text-primary ">Trust and Quality are
+                    Our Motto</h5>
+                    <p>Promote health care with love and high quality treatment of global standard for all and at affordable cost for the less privileged irrespective of caste and creed. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}
